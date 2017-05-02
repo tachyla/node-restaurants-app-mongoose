@@ -16,6 +16,7 @@
     "mongoose": "^4.7.2",
     "morgan": "^1.7.0"
   },
+  //devDependencies already here
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
