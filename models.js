@@ -52,5 +52,6 @@ restaurantSchema.methods.apiRepr = function() {
 // note that all instance methods and virtual properties on our
 // schema must be defined *before* we make the call to `.model`.
 const Restaurant = mongoose.model('Restaurant', restaurantSchema);
+//.model() will use restaurantSchema on the 'Restaurant' collection/table 
 
 module.exports = {Restaurant};

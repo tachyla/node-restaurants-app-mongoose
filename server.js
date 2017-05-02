@@ -139,6 +139,7 @@ function runServer(databaseUrl=DATABASE_URL, port=PORT) {
       if (err) {
         return reject(err);
       }
+      //QUESTION: why is empty () allowed and sometimes it needs a parameter? 
       server = app.listen(port, () => {
         console.log(`Your app is listening on port ${port}`);
         resolve();
@@ -168,7 +169,8 @@ function closeServer() {
 }
 
 // if server.js is called directly (aka, with `node server.js`), this block
-// runs. but we also export the runServer command so other code (for instance, test code) can start the server as needed.
+// runs. but we also export the runServer command so other code (for instance, test code) 
+//can start the server as needed.
 if (require.main === module) {
   runServer().catch(err => console.error(err));
 };
